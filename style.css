@@ -1,0 +1,42 @@
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 200;
+}
+
+.ads {
+    position: sticky;
+    top: 20px;
+}
+
+.img-ads {
+    margin-top: 1.3rem;
+}
+
+.stock-link {
+    font-weight: 120;
+    font-size: 13px;
+}
+
+.stock-link-small {
+    font-weight: 120;
+    font-size: 10px;
+    margin-left: 2rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 601px) {
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+        height: 44px;
+        line-height: 44px;
+    }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f3fc65bfde.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" data-target="navbar-fixed" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+                    <a href="https://github.com/Shashimii" target="_blank" class="brand-logo">
+                        <i class="fa-brands fa-github"></i> Shashimii
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="https://www.facebook.com/ReVoLuTioN.sl">Facebook</a></li>
+                        <li><a href="https://www.tiktok.com/@shashimii3">Tiktok</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a class="dropdown-trigger" data-target="dropdown1" href="#">More<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                </div>  
+            </div>
+        </nav>
+    </div>
+
+    <!-- Dropdown -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#">After Effects</a></li>
+    </ul>
+
+    <h1 class="center red-text text-lighten-2">Navbar</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. 
+            Inside a recommended container div, there are 2 main parts of the navbar. 
+            A logo or brand link, and the navigations links. 
+            You can align these links to the left or right.
+        </p>
+
+        <h3 class="red-text text-lighten-2">Right Aligned Links</h3>
+        <p>
+            To right align your navbar links, just add a 
+            right class to your <'ul'> that contains them.
+        </p>
+
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo">
+                        <i class="fa-regular fa-flag"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="1">Item 1</a></li>
+                        <li><a href="2">Item 2</a></li>
+                        <li><a href="3">Item 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+
+        <h3 class="red-text text-lighten-2">Left Aligned Links</h3>
+        <p>
+            To left align your navbar links, just add a 
+            `left class to your <'ul'> that contains them.
+        </p>
+        
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper hide-on-med-and-down">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo right">
+                        <i class="fa-regular fa-flag"></i>
+                    </a>    
+                    <ul id="nav-mobile" class="left">
+                        <li><a href="1">Item 1</a></li>
+                        <li><a href="2">Item 2</a></li>
+                        <li><a href="3">Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="nav-wrapper hide-on-large-only">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo center">
+                        <i class="fa-regular fa-flag"></i>
+                    </a>  
+                </div>
+            </div>
+        </nav>
+
+        <br>
+
+        <h3 class="red-text text-lighten-2">Centering the logo</h3>
+        <p>
+            The logo will center itself on medium and down screens, 
+            but if you want the logo to always be centered, add the 
+            center class to your <'a class="brand-logo">. 
+                You will have to make sure yourself that links do 
+                not overlap if you use this.
+        </p>
+        
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo center">
+                        <i class="fa-regular fa-flag"></i>
+                    </a>    
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="1">Item 1</a></li>
+                        <li><a href="2">Item 2</a></li>
+                        <li><a href="3">Item 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <br>
+
+        <h3 class="red-text text-lighten-2">Active Items</h3>
+        <p>
+            Add active class to your li tags to denote the current page.
+        </p>
+
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo">
+                        <i class="fa-regular fa-flag"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="1">Item 1</a></li>
+                        <li class="active"><a href="2">Item 2</a></li>
+                        <li><a href="3">Item 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+
+        <h3 class="green-text text-accent-4">Extended Navbar with Tabs</h3>
+        <p>
+            To add extended components to the navbar, 
+            add the class nav-extended to the outer nav tag. 
+            This will allow your navbar height to be variable. 
+            Then you can just include a tabs component 
+            inside the nav-wrapper.
+        </p>
+
+        <nav class="green accent-4 nav-extended">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo">
+                        <i class="fa-solid fa-carrot"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="https://www.instagram.com/newjeans_official/">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@newjeans_official">Tiktok</a></li>
+                        <li><a href="https://newjeans.kr/">Newjeans</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a href="#tab1">Hanni</a></li>
+                    <li class="tab"><a href="#tab2">Minji</a></li>
+                    <li class="tab"><a href="#tab3">Haerin</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sidenav -->
+
+        <ul class="sidenav" id="mobile-demo">
+            <ul>
+                <li><a href="https://www.instagram.com/newjeans_official/">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@newjeans_official">Tiktok</a></li>
+                <li><a href="https://newjeans.kr/">Newjeans</a></li>
+            </ul>
+        </ul>
+
+        <ul class="sidenav" id="navbar-fixed">
+            <ul>
+                <li><a href="https://www.facebook.com/ReVoLuTioN.sl"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.tiktok.com/@shashimii3"><i class="fa-brands fa-tiktok"></i> Tiktok</a></li>
+                <li><a href="#"><i class="fa-brands fa-discord"></i>Discord</a></li>
+            </ul>
+        </ul>
+
+        <!-- Tabs -->
+        <div class="row">
+            <div class="card">
+                <div id="tab1" class="card-image">
+                    <img class="responsive-img" src="assets/01.jpg">
+                </div>
+                <div id="tab2" class="card-image">
+                    <img class="responsive-img" src="assets/02.jpg">
+                </div>
+                <div id="tab3" class="card-image">
+                    <img class="responsive-img" src="assets/03.jpg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="height:1000px"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+            $('.sidenav').sidenav({
+                edge: 'right',
+                inDuration: 1000,
+                outDuration: 1000
+            });
+
+            $('.dropdown-trigger').dropdown();
+        });
+    </script>
+</body>
+</html>

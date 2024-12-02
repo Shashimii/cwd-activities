@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Table Media</title>
+</head>
+<body>
+        
+    <h1 class="center red-text text-lighten-2">Table</h1>
+    <div class="divider"></div>
+
+    <br>
+
+    <div class="container">
+        <p>
+            Tables are a nice way to organize a lot of data. 
+            We provide a few utility classes to help you style your table as easily as possible. 
+            In addition, to improve mobile experience, all tables on mobile-screen widths are 
+            centered automatically.
+        </p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h3 class="red-text text-lighten-2">Striped Table</h3>
+        <p>Add class="striped" to the table tag for a striped table</p>
+
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h3 class="red-text text-lighten-2">Highlight Table</h3>
+        <p>Add class="highlight" to the table tag for a highlight table.</p>
+
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h3 class="red-text text-lighten-2">Responsive Table</h3>
+        <p>
+            Add class="responsive-table" to the table tag to make 
+            the table horizontally scrollable on smaller screen widths.
+        </p>
+        
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                </tr>
+            </tbody>
+        </table>
+                
+    </div>
+
+    <br><br><br><br>
+
+    <h1 class="center red-text text-lighten-2">Media CSS</h1>
+    <div class="divider"></div>
+
+    <br>
+    
+    <div class="container">
+        <h3 class="red-text text-lighten-2">Images</h3>
+        <p>Images can be styled in different ways using Materialize</p>
+
+        <br>
+
+        <p class="flow-text">Responsive Images</p>
+        <p>
+            To make images resize responsively to page width, 
+            you can add the class responsive-img to your image tag. 
+            It will now have a max-width: 100% and height:auto.
+        </p>
+
+        <br>
+
+        <p class="flow-text">Circular images</p>
+        <div class="col s12 m8 offset-m2 l6 offest-l3">
+            <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="assets/hae.jpg" alt="img" class="circle responsive-img">
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            This is a square image. Add the "circle" class to it to make it appear circular.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <p>To make images appear circular, simply add class="circle" to them</p>
+
+        <br>
+
+        <h3 class="red-text text-lighten-2">Videos</h3>
+        <p>We provide a container for Embedded Videos that resizes them responsively.</p>
+
+        <p class="flow-text">Responsive Embeds</p>
+        <p>To make your embeds responsive, merely wrap them with a containing div which has the class video-container</p>
+
+        <div class="video-container">
+            <iframe width="449" height="253" src="https://www.youtube.com/embed/jUNz-uTF--E" title="[단독샷캠4K] 뉴진스 &#39;Ditto&#39; 단독샷 별도녹화│NewJeans ONE TAKE STAGE @SBS Inkigayo 230115" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+
+    <h1 class="center red-text text-lighten-2">Media</h1>
+    <div class="divider"></div>
+
+    <div class="container">
+        <p>
+            Media components include things that have to do with large media objects like Images, 
+            Video, Audio, etc.
+        </p>
+
+        <br>
+
+        <h3 class="red-text text-lighten-2">Material Box</h3>
+        <p>
+            Material box is a material design implementation of the Lightbox plugin. 
+            When a user clicks on an image that can be enlarged, Material box centers 
+            the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, 
+            the user can either click on the image again, scroll away, or press the ESC key.
+        </p>
+        
+        <div class="img-container">
+            <img class="materialboxed" data-caption="별도녹화│NewJeans Haerin" width="450" height="450" src="assets/hae2.jpg" alt="img">    
+        </div>
+        
+        <br>
+
+        <h3 class="red-text text-lighten-2">Slider</h3>
+        <p>
+            Our slider is a simple and elegant image carousel. 
+            You can also have captions that will be transitioned on 
+            their own depending on their alignment. 
+            You can also have indicators that show up on the bottom of the slider.
+        </p>
+        
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="assets/S1.jpg" alt="img">
+                    <div class="caption left-align">
+                        <h3 class="red-text">Ep 1</h3>
+                        <h5 class="red-text text-lighten-1">
+                            Bubble Gum
+                        </h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/S2.jpg" alt="img">
+                    <div class="caption left-align">
+                        <h3 class="red-text">Ep 2</h3>
+                        <h5 class="red-text text-lighten-1">
+                            OMG
+                        </h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/S3.jpg" alt="img">
+                    <div class="caption left-align">
+                        <h3 class="red-text">Ep 3</h3>
+                        <h5 class="red-text text-lighten-1">
+                            New Jeans
+                        </h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/S4.jpg" alt="img">
+                    <div class="caption left-align">
+                        <h3 class="red-text">Ep 4</h3>
+                        <h5 class="red-text text-lighten-1">
+                            SG 2023
+                        </h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div style="height:100px"></div>
+
+
+    </div>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.materialboxed').materialbox({
+                inDuration: 300,
+                outDuration: 300
+            });
+            $('.slider').slider({
+                indicators: false,
+                height: 200,
+                duration: 600,
+                interval: 3000
+            });
+        });
+    </script>
+</body>
+</html>
